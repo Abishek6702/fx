@@ -40,9 +40,9 @@ export default function FAQ() {
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="rounded-lg border bg-white dark:bg-[#0b1220] px-6"
+                  className="rounded-lg border bg-white dark:bg-[#0b1220] px-6 "
                 >
-                  <AccordionTrigger className="text-lg font-medium py-5 hover:no-underline [&>svg]:h-5 [&>svg]:w-5">
+                  <AccordionTrigger className="text-lg font-medium cursor-pointer py-5 hover:no-underline [&>svg]:h-5 [&>svg]:w-5">
                     {item.q}
                   </AccordionTrigger>
 
@@ -56,23 +56,22 @@ export default function FAQ() {
 
           {/* RIGHT – IMAGE */}
           <div className=" flex-col items-center text-center hidden md:flex">
-        
-              <Image
-                src="/faqdark.png"
-                alt="Any Questions"
-                width={320}
-                height={280}
-                className="object-contain dark:hidden "
-                priority
-              />
-              <Image
-                src="/faqlite.png"
-                alt="Any Questions"
-                width={320}
-                height={280}
-                className="object-contain hidden dark:block"
-                priority
-              />
+            <Image
+              src="/faqdark.png"
+              alt="Any Questions"
+              width={320}
+              height={280}
+              className="object-contain dark:hidden "
+              priority
+            />
+            <Image
+              src="/faqlite.png"
+              alt="Any Questions"
+              width={320}
+              height={280}
+              className="object-contain hidden dark:block"
+              priority
+            />
             <h3 className="mt-6 text-2xl font-semibold text-gray-900 dark:text-white">
               Any Questions?
             </h3>

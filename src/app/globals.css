@@ -195,3 +195,32 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/* Curved number badge */
+.curve-badge {
+  position: relative;
+  width: 64px;
+  height: 48px;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Inner curve cut */
+.curve-badge::before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 50%;
+}
