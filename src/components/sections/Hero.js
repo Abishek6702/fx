@@ -10,11 +10,19 @@ export default function Hero() {
     >
       {/* Background Image */}
       <Image
-        src="/hero-bg.webp"
+        src="/heropattern1.svg"
         alt="Hero background"
         fill
         priority
-        className="object-fit"
+        className="object-cover opacity-20 dark:block hidden"
+      />
+
+      <Image
+        src="/heropattern2.svg"
+        alt="Hero background"
+        fill
+        priority
+        className="object-cover opacity-25 dark:hidden block"
       />
 
       <Slider/>
